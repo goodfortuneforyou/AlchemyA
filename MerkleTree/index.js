@@ -21,7 +21,6 @@ class MerkleTree {
         return this.getRoot(layer);
     }
     getProof(index, layer = this.leaves, proof = []) {
-        console.log(layer);
         if (layer.length === 1) return proof;
         const newLayer = [];
         for (let i = 0; i < layer.length; i += 2) {
